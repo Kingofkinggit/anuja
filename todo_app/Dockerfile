@@ -1,4 +1,4 @@
-FROM windows10x64
+FROM ubuntu:18.04
 MAINTAINER abhishekhdpatil6899@gmail.com
 
 RUN apt-get update -y
