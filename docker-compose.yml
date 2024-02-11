@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  todo_flask:
+    build: ./todo_app
+    ports:
+      - "8034:8034"
+    network_mode: host
+
