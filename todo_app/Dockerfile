@@ -8,7 +8,7 @@ RUN apt-get install gunicorn3 -y
 COPY requirement.txt requirement.txt
 COPY todo_flask /opt/
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirement.txt
 WORKDIR /opt/
 
 CMD ["gunicorn3", "-b", "0.0.0.0:8034", "app:app", "--workers=5"]
